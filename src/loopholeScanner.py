@@ -5,7 +5,6 @@ import numpy as np
 from math import sqrt
 import statistics
 import pandas as pd
-import Levenshtein
 import glob
 import os
 from logzero import logger
@@ -155,7 +154,7 @@ class CardSymbols:
     
     
     def add_box(self, divDic):
-        logger.debug("Start: add_box")
+        logger.info("Start: add_box")
         for cs in self.array:
             boxIn = False
             for boxType,boxPos in divDic.items():
@@ -180,7 +179,7 @@ class CardSymbols:
 
 
     def add_word(self, extracted_wordPos):
-        logger.debug("Start: add_word")
+        logger.info("Start: add_word")
         for cs in self.array:
             add_words = []
             for ewp in extracted_wordPos:
@@ -199,7 +198,7 @@ class CardSymbols:
 
     # ['card']: {title, box}
     def add_card(self):
-        logger.debug("Start: add_card")
+        logger.info("Start: add_card")
         for cs in self.array:
             df_triggerCards = pd.read_csv(DIGITAL_CARDS_CSV_PATH)
 
@@ -245,7 +244,7 @@ class DigitalCards:
         logger.debug([i['card'] for i in self.array])
 
     def add_card_path(self):
-        logger.debug("Start: add_card_path")
+        logger.info("Start: add_card_path")
         # dc['card_path']
         for dc in self.array:
             if dc['card']:
@@ -267,10 +266,10 @@ class DigitalBords:
     
     def __init__(self):
         self.dic = {}
-        self.board_img = imread4warp(BOARD_IMG_PATH) 
+        self.board_img = imread2np(BOARD_IMG_PATH) 
 
     def generate_captured_scattered_img(self, DigitalCards):
-        logger.debug('Start: generate captured scattered img')
+        logger.info('Start: generate captured scattered img')
         img = self.board_img #初期値はプリセットのボード画像
 
         for dc in DigitalCards.array:
@@ -292,7 +291,7 @@ class DigitalBords:
 
 
     def generate_digital_scattered_img(self, DigitalCards):
-        logger.debug('Start: generate digital scattered img')
+        logger.info('Start: generate digital scattered img')
         img = self.board_img #初期値はプリセットのボード画像
         for dc in DigitalCards.array:  
             x_offset = max(0, dc['posLeftTop']['x'])
@@ -304,7 +303,7 @@ class DigitalBords:
                 y_offset = self.board_img.shape[0] - DIGITAL_CARD_HEIGHT
 
             if dc['card_path']:
-                digital_card_img = imread4warp(dc['card_path'])
+                digital_card_img = imread2np(dc['card_path'])
                 img = overlay_np_img(
                                     x_offset, 
                                     y_offset, 
@@ -323,10 +322,10 @@ class DigitalBords:
 
 def generate(captured_byte_img: bytes, captured_np_img: np.ndarray):
     
-    logger.debug('1. get google api request...')
+    logger.info('1. get google api request...')
     response = google_vision_response(captured_byte_img)
 
-    logger.debug('2. extract info from google api result...')
+    logger.info('2. extract info from google api result...')
     extracted_wordPos = extract_wordPos(response) # 'word', 'pos'
 
     CapturedBoard = extract_captured_board(extracted_wordPos) # 'pos', 'width', 'height' or None
@@ -354,7 +353,7 @@ def generate(captured_byte_img: bytes, captured_np_img: np.ndarray):
     #####################################
     ### Add Parameters to CardSymbols ###
     #####################################
-    logger.debug('3. add info to captured cards...')
+    logger.info('3. add info to captured cards...')
     cardSymbols.add_rec_pos(caputuredCardTextHeight)
     cardSymbols.add_box(divA2IboxDic)
     cardSymbols.add_rec_img(caputuredCardTextHeight, captured_np_img)
@@ -365,15 +364,16 @@ def generate(captured_byte_img: bytes, captured_np_img: np.ndarray):
     ##############################
     ### Generate Digital Board ###
     ##############################
-    logger.debug('4. get digital cards...')
+    logger.info('4. get digital cards...')
     # 'posLeftTop', 'capturedImg', 'box', 'card'
     digitalCards = DigitalCards(CapturedBoard, cardSymbols)
     digitalCards.add_card_path()
 
-    logger.debug('5. generate digital boards...')
+    logger.info('5. generate digital boards...')
     digitalBoards = DigitalBords()
     digitalBoards.generate_captured_scattered_img(digitalCards)
     digitalBoards.generate_digital_scattered_img(digitalCards)
 
+    logger.info('Done well!')
     
     return digitalBoards.dic

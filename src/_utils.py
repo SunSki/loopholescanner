@@ -4,6 +4,7 @@ import cv2
 import numpy as np
 from math import sqrt, sin, cos, atan2, radians, pi
 import Levenshtein
+from PIL import Image
 
 
 
@@ -14,7 +15,7 @@ def google_vision_response(vision_content):
     return response
 
 
-def imread4warp(filename, flags=cv2.IMREAD_COLOR, dtype=np.uint8):
+def imread2np(filename, flags=cv2.IMREAD_COLOR, dtype=np.uint8):
     try:
         n = np.fromfile(filename, dtype)
         img = cv2.imdecode(n, flags)
@@ -188,6 +189,11 @@ def overlay_np_img(x_offset, y_offset, background, front):
     _background = np.copy(background)
     _background[y_offset : y_offset+front.shape[0], x_offset : x_offset+front.shape[1]] = front
     return _background
+
+
+def saveNpImg(img_array, save_path):
+    im = Image.fromarray(img_array)
+    im.save(save_path)
 
 
 

@@ -8,7 +8,7 @@ PAGE_ICON_PATH = '../data/img/loopholesLogo.jpg'
 LOGO_PATH = '../data/img/loopholeScannerLogo.jpg'
 HERO_IMG_PATH = '../data/img/mainHero.jpg'
 LECTURE_IMG_PATH = '../data/img/goodBadPhoto.jpg'
-
+IMG_SAVE_FOLDER = '../data/img/upload'
 
 #####################
 ### Set streamlit ###
@@ -39,14 +39,23 @@ st.markdown(
 
 from PIL import Image
 import numpy as np
+from _utils import saveNpImg
+from glob import glob
 
 import loopholeScanner
 
 
 
+def saveUploadImage(img_np):
+    save_img_num = len(glob(f'{IMG_SAVE_FOLDER}/*.jpg'))
+    file_name = f"{IMG_SAVE_FOLDER}/upload_{save_img_num}.jpg"
+    saveNpImg(img_np, file_name)
+
+
 def generateDigitalBoard(img_bytes, img_np):
     try:
         digital_boards = loopholeScanner.generate(img_bytes, img_np)
+        saveUploadImage(img_np)
         st.session_state.digitalBoards[DIGITAL_0] = digital_boards[DIGITAL_0]
         st.session_state.digitalBoards[CAPTURED_0] = digital_boards[CAPTURED_0]
         st.session_state.upload_state = 1
