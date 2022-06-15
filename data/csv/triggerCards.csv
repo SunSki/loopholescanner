@@ -1,0 +1,78 @@
+HeadTitle,Title,Description,Box
+Brand,Brand Communication,"Brand communication is the combination of activities such as advertising, social media and reviews that are used to communicate with customers. Brand communication takes place every time a potential customer or client interacts with a particular brand. This is how the company communicates their value proposition to their target customers.",circular
+Fallout,Fallout Rate,"Data on how many users continued to use the product, or not. This data can be used to examine how you can increase user retention rates.",circular
+Making,Making Memberships Count,Giving customers exclusive benefits through membership can help to build a more loyal customer base. How would you create a membership concept? What value would it add to your customer’s experiences?,circular
+Product,Product Review,Product reviews are the opinions or feedback from customers about a particular product. Many online businesses put up a review section on their website to allow customers to rate and review the product they purchased. A product review helps other users get a clear idea of the product before purchasing it.,circular
+Repair,Repair Services,"Repair services means the restoration of equipment to its original function on an ‘as-needed’ basis, as may be required by the facility in response to the failure or malfunctioning of such equipment. The repair process may also include servicing, reconditioning, modification, and refurbishment.",circular
+Retention,Retention Strategy,The implementation of the strategy that keeps your customers coming back.,circular
+Return,Return Service,Information that clarifies how to handle returns when a product is defective so that users are not dissatisfied.,circular
+Subscription,Subscription,Selling subscriptions to your customers is a powerful way to secure recurring revenue for your business. How can you structure a profitable subscription model for your product or service?,circular
+Upcycling,Upcycling,"How do you keep the materials at their highest value, keep them from degrading or reuse them after the product's lifecycle?",circular
+User,User Satisfaction,"Data on how satisfied users are with which aspects of the product. This covers usability, design, responsiveness, and brand perception.",circular
+User,User Behavior,"The way your customer behaves after buying your product, including their interaction with your product, repeat interaction with your website or other channels.",circular
+User, User Attraction,"Besides attracting people, you're also showing how good and desirable a product or service is before you even suggest that they buy it",circular
+Web-Tracking,Web-Tracking,"The information that is collected about how the users interact with the brand’s website. This could be traffic, the user’s product preferences etc.",circular
+Company,Company Strategy Analysis,The company’s set of actions/plans towards delivering a competitive product.,coAnalyse
+Customization,Customization,"Data provided by the company to give users ranges of options to choose from for the design of their products. For example, material type, choice of colors.",coAnalyse
+Financial,Financial Data,"Key financial metrics needed to produce a product from start to finish. for example, raw material cost, production cost etc.",coAnalyse
+Market,Market Analysis,"An overview of companies in your industry that have similar product service systems, and how they operate them.",coAnalyse
+Market,Market Placement,"Show your product’s differentiator in the marketplace. For example, reusing materials instead of using up clothes, or producing locally instead of in distant areas where wages are lower.",coAnalyse
+Personalization,Personalization,"Customers can tailor products to their specific requirements, using their personalized data as design input. For example, body measurements.",coAnalyse
+Physical,Physical Store,"The physical channel where your customers can walk in, try and purchase your products. How is it more beneficial to have a physical location? Why?",coAnalyse
+Pop-Up,Pop-Up Store,"If you want to spend money on your business and not pay rent, how can you utilize temporary spaces to reach your customers?",coAnalyse
+Trend,Trend Research,"The overview of the most popular designs in fashion, as observed on runways, streets, and social media.",coAnalyse
+User,User Preference,"Knowing your user, their preferences and taste in the current market. This data can be used to recommend relevant products to your users.",coAnalyse
+Web,Web Store,The digital channel where your customers can see the details of your product and place orders online.,coAnalyse
+Color,Color,Colors incorporated into the clothing's design play a significant role in the design process. The effect color has on most people is incredibly valuable.,coDesign
+Design,Design Software,"The software/programs needed to digitally represent what the final product should look like, incorporating the necessary parameters needed in the production phase.",coDesign
+Design,Design Hardware,"The technological tools required for the implementation of design into the software. Think about drawing tablets, computer displays and mouse etc.",coDesign
+Fiber,Fiber Behavior,This is the data about the planned performance of the product which is informed by the compositions of the different materials it is made from.,coDesign
+Material,Material,The data of materials used in designing the product from start to finish.,coDesign
+Size,Size and Shape,The size and shape of the materials used in the design process.,coDesign
+Texture,Texture,The texture information of textile that is required during the design process.,coDesign
+Visual,Visual Render,The visual representation of how the proposed product will look like.,coDesign
+Batch,Batch Production,"Is it a first-time production, launch, or just a prototype? How much production is planned? What size and how much data can you get from the batch?",coManufacturing
+External,External,External production is when the production process is outsourced.,coManufacturing
+Handwork,Handwork,"Are there any processes that you need to by hand instead of by machine? For example, 3D-Printed clothing, buttons or fasteners are examples of processes that must be added by hand.",coManufacturing
+In-house,In-house,In-house production is an activity that is conducted by employees within the same business. The task is carried out using the time and effort of the in-house employees and any other assets that the company already has.,coManufacturing
+Location,Location,The physical location where the product is produced.,coManufacturing
+Product,Product Specs,"List product-related parameters such as color, size, etc. What are the parameters that are required by the machine to make your product?",coManufacturing
+Production,Production Time,"Data that relates to how long it takes to produce a product. For example, the machine time, assembly-finishing time, packaging-labeling time, etc.",coManufacturing
+Stock,Stock Management,The information required to keep up with your products' stock. What does this data look like in your company?,coManufacturing
+Workshop,Workshop,Is your product produced in a workshop; Where is it located? How is information relayed to the personnel in this workshop?,coManufacturing
+Customer,Customer Service,"Respond to users' questions about products, pricing, and delivery. For example, answering user quarries such as delivery, pricing, and delivery.",comparing
+Digital,Digital Twin,"Obtains user usage data from the product. For example, sensors on the soles of shoes to determine how often and for how long they are used.",comparing
+Maintenance,Maintenance,This data monitors the way the users are maintaining the products as suggested by the company. The washing cycle gives an idea of the possible lifespan of the product.,comparing
+Personal,Personal Assistance,"Your customers should be in contact with a human being before, during, and after every sale. How can this type of customer relationship strengthen your business and your bottom line?",comparing
+Product,Product Usage,Has your product been used in the way your company intended it to? How do you collect such data?,comparing
+Repair,Repair Setups,Provide documentation and tools to enable users to make repairs themselves. Include instructions on how to send it back to the company in case users are unable to do so.,comparing
+Satisfaction,Expectation Satisfaction Match,Think about how your product lives up to the expectations of your customers. How do you collect such data?,comparing
+User,User Usage,"Based on past usage history, you can predict how often and how the product will be used. Additionally, you can suggest appropriate maintenance practices.",comparing
+Advertisement,Advertisement,"The kind of information that is highlighted during advertisements. The messaging that is conveyed by a customer wearing your product. How can you make money from selling advertising space on your products, platforms, or events?",coUse
+Affiliates,Affiliates,Affiliate partners give you valuable access to new markets by reselling your products or service online. Who could be your potential affiliate partners?,coUse
+Feedback,Feedback,"User feedback is qualitative and quantitative data from customers on their likes, dislikes, impressions, and requests about a product. Collecting and making sense of user feedback is critical for businesses that wish to make improvements based on what their users need.",coUse
+Influencing,Influencing by Branding,This is how the branding of a product influences how the users end up using the product.,coUse
+Repair,Repair Condition,Data collected from the condition of your product when it is sent for any type of repair.,coUse
+Revision/,Revision,Are there any design revisions you want to make in your next design based on the user feedback?,coUse
+Shareability,Shareability,"These are the product usage data used by different stakeholders. For example, is the feedback data which is needed for marketing also useful for the production team?",coUse
+Social,Social Media,"Data collected from photos posted in social media circles, either by your consumer or people in their social circle.",coUse
+Color,Color,"The process of transferring color information of the product, such as hex codes, to the design process.",encode
+Level,Level of Comfort,"Are the users comfortable using your product? For clothing, how does it fit on the body and how do they like the design?",encode
+Physical,Physical Parameter,"These are the parameters that affect the final clothing item. Imagine the textile, measurements needed and other parameters that are required to flesh out your product.",encode
+Size,Size,"Parameters that determine the size of the product. For clothing, think about the length of the sleeves, the measure of the waist, the length of the garment etc.",encode
+Texture,Texture,"The physical properties of the final product, such as those that impact the sense of touch or sight.",encode
+Code,Code,"This converts design data into machine-appropriate data and adjusts parameters. In clothing, the illustration data is combined with the user’s physical data and converted into a format that can be produced by the machine.",materialize
+Machine,Machine Instructions,"Document on how engineers can use the machine. For example, machine configuration information and other technical information.",materialize
+Machine,Machine Trouble Shooting,Document about how to deal with problems with the machine when they occur. Solving machine problems quickly allows for planned production.,materialize
+Machine,Machine Calibrations,Specific parameters such as the speed at which the machine works to make precise products. Deciding on the optimal parameters is largely a matter of experience and documenting them allows other workers to set them as well.,materialize
+Material,Material Set Up and Management,Document about what material is available and how they are used. It also includes how the material will be managed.,materialize
+Set,Set Up Time,"Time that is required to set up the machine to produce a particular product. This varies with the complexity of the design, how delicate the raw materials are, whether it is single or multi-color etc.",materialize
+Sustainable,Sustainable Materials,"Are the materials compostable and biodegradable? Is the product made with single or mixed materials, is the material non-toxic?",materialize
+Virtual,Virtual Sample,The digital image of how the final product should look like.,materialize
+Different,Different ways to use the product,"Are there multiple ways to use/ wear your product? If not, think about the different ways your product can be used?",profiling
+Lifecycle,Lifecycle,This is the data about the intended lifespan of the product.,profiling
+Limitations,Limitations,"Possible methods of product usage that might reduce the lifespan of the product. For example, can the product be washed with any type of detergent?",profiling
+Previous,Previous Usage Data,Data on how previously purchased products have been used. This data can be used to make suggestions on how to use the product to make it last longer.,profiling
+Product,Product Guidelines,This is the data about how the product is meant to be used to achieve the intended lifespan.,profiling
+Transportation,Transportation Data,Data on how many products were delivered to users and when. This data can be used to inform users how long it will take for products to arrive. This could be in partnership with companies/stakeholders involved in logistics/order fulfilment.,profiling
+Trends,Trends,"Expressions of trends, which are socio-culturally grounded, in aesthetic spheres, mostly by means of visual and haptic characteristics applied to clothing and apparel products and are often considered fads or short-term trends.",profiling
